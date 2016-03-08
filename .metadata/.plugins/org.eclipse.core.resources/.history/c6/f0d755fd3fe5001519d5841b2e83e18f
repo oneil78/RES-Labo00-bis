@@ -1,0 +1,14 @@
+package ch.heigvd.res.io;
+
+import java.io.PrintStream;
+
+public class CsvSerializer implements ISerializer{
+	public void serialize(IData data, PrintStream ps, String delimitter){
+		String csv = "";
+		for(String key: data.getKeys()){
+			csv += data.getValue(key) + delimitter;
+		}
+		csv.replace(csv.substring(csv.length() - 1), "");
+		ps.println(csv);
+	}
+}

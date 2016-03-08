@@ -1,0 +1,16 @@
+WRITE;BlockByBlockWithBufferedStream;500;10485760;32;
+WRITE;BlockByBlockWithBufferedStream;50;10485760;57;
+WRITE;BlockByBlockWithBufferedStream;5;10485760;136;
+WRITE;ByteByByteWithBufferedStream;0;10485760;503;
+WRITE;BlockByBlockWithoutBufferedStream;500;10485760;123;
+WRITE;BlockByBlockWithoutBufferedStream;50;10485760;782;
+WRITE;BlockByBlockWithoutBufferedStream;5;10485760;7544;
+WRITE;ByteByByteWithoutBufferedStream;0;10485760;33537;
+READ;BlockByBlockWithBufferedStream;500;10485760;24;
+READ;BlockByBlockWithBufferedStream;50;10485760;29;
+READ;BlockByBlockWithBufferedStream;5;10485760;56;
+READ;BlockByBlockWithBufferedStream;0;10485760;117;
+READ;BlockByBlockWithoutBufferedStream;500;10485760;52;
+READ;BlockByBlockWithoutBufferedStream;50;10485760;454;
+READ;BlockByBlockWithoutBufferedStream;5;10485760;4539;
+READ;ByteByByteWithoutBufferedStream;0;10485760;21279;

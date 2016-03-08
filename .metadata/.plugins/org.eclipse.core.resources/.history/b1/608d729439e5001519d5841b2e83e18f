@@ -1,0 +1,25 @@
+package ch.heigvd.res.io;
+
+import java.util.Map;
+
+import ch.heigvd.res.io.BufferedIOBenchmark.IOStrategy;
+
+public class MyExperimentData implements IData{
+
+	private Map<String, Object> myMap;
+	public MyExperimentData(String operation,String strategy,int blockSize,int fileSizeInBytes,int durationInMs){
+		myMap.put("operation", operation);
+		myMap.put("strategy", strategy);
+		myMap.put("blockSize", blockSize);
+		myMap.put("fileSizeInBytes", fileSizeInBytes);
+		myMap.put("durationInMs", durationInMs);
+		
+	}
+	public String[] getKeys(){
+		return new String[]{"operation","strategy", "blockSize", "fileSizeInBytes", "durationInMs"};
+	}
+	public Object getValue(String key){
+		return myMap.get(key);
+	}
+	
+}
